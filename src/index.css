@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.order , .product-item{
+    border: green 0.02px dotted  !important;
+    
+}
+@layer components{
+    .btn {
+        @apply px-3 py-1 rounded-md bg-slate-200 hover:bg-slate-300 transition-colors duration-300
+    }
+}
+
+.form-control{
+    @apply px-2 py-1 rounded-md focus:outline-none border-2 border-slate-400 border-opacity-50 focus:border-green-600 focus:caret-green-700
+}
+
+.container{
+    width: 80%;
+}
+
+body{
+    background: white !important;
+            font-family: 'Fira Sans', sans-serif;
+
+}
+
+
+.active {
+    color: #0aad0a !important;
+    font-weight: bolder;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Default color */
+    transition: color 0.3s;
+    /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color:#0aad0a ;
+    /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   
+
+    .social-icons i {
+        margin-top: 20px;
+    }
+    .count-icon li{
+        margin-top: 20px;
+    }
+}
+
+
